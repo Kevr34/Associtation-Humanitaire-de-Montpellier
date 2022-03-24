@@ -1,3 +1,5 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 body {
     max-width: 360px;
     text-align: center;
@@ -102,4 +104,104 @@ body {
     width: 90vw;
     height: 25vh;
     padding: 2rem 0;
+}
+
+.section-corona button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5vh;
+    font-size: 1.2rem;
+    padding: 2vh 5vw;
+    margin-bottom: 2vh;
+}
+
+.section-map {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.section-map .when {
+    color: red;
+}
+
+.section-map button {
+    background-color: #1486c4;
+    color: white;
+    border: none;
+    border-radius: 5vh;
+    font-size: 1.2rem;
+    padding: 2vh 5vw;
+    margin: 2vh 0 3vh 0;
+}
+
+.section-map iframe {
+    width: 90vw;
+    height: 50vh;
+    padding: 2rem 0;
+}
+
+a, a:hover {
+	color: #000;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.socialbtnsbtnsbtns, .socialbtnsbtnsbtns ul, .socialbtnsbtnsbtns li {
+	margin: 0;
+	padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+    padding: 0.4rem;
+}
+
+.socialbtns .fa {
+	color: #FFF;
+	text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	-webkit-text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	-moz-text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	-o-text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	transition: all ease-out 0.5s;
+	-moz-transition: all ease-out 0.5s;
+	-webkit-transition: all ease-out 0.5s;
+	-o-transition: all ease-out 0.5s;
+}
+
+.socialbtns .fa:hover {
+	color: #000;
+	text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	-webkit-text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	-moz-text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	-o-text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	transition: all ease 0.5s;
+	-moz-transition: all ease-in 0.5s;
+	-webkit-transition: all ease-in 0.5s;
+	-o-transition: all ease-in 0.5s;
 }
