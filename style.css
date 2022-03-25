@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     padding: 0;
     margin: 5rem 0 0 0;
+    
 }
 
 /* Header */
@@ -21,6 +22,7 @@ body {
     align-items: center;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.9);
+    z-index: 200;
     
 }
 
@@ -119,13 +121,14 @@ body {
 .section-map {
     font-weight: bolder;
     font-size: 1.2rem;
+
 }
 
 .section-map .when {
     color: red;
 }
 
-.section-map button {
+.blue-btn {
     background-color: #1486c4;
     color: white;
     border: none;
@@ -146,6 +149,8 @@ a, a:hover {
 	text-decoration: none;
 	padding: 5px;
 }
+
+/* Social Icons */
 
 .socialbtnsbtnsbtns, .socialbtnsbtnsbtns ul, .socialbtnsbtnsbtns li {
 	margin: 0;
@@ -205,3 +210,129 @@ a, a:hover {
 	-webkit-transition: all ease-in 0.5s;
 	-o-transition: all ease-in 0.5s;
 }
+
+/* flipping card */
+
+.card {
+    margin:4rem auto;
+    width:240px;
+    height:320px;
+    perspective: 1000px;
+    text-align: center;
+  }
+
+  .card-inner {
+    position:relative;
+    width: 100%;
+    height:100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+    
+  }
+
+  .recto, .verso {
+    position:absolute;
+    height:100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding:16px;
+    border-radius:8px;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
+  }
+
+  .recto {
+    background-image:url('images/front.jpg');
+    background-size:cover;
+    background-position:center center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: opacity .6s;
+  }
+
+  .recto:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background: #1486c4;
+  }
+  
+  .recto .card-content {
+    z-index: 1;
+    color:white;
+  }
+  
+  .recto .card-content p {
+    color:#ececec;
+  }
+
+  .verso {
+    transform: rotateY(180deg);
+    background:red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .verso .card-image {
+    width:120px;
+    height:120px;
+    margin:0 auto;
+    border:solid 1px #cecece;
+    border-radius:100%;
+    background-image:url('images/back.jpg');
+    background-size:cover;
+    background-position:center center;
+  }
+  
+  .verso p {
+    margin-top:12px;
+    color: #ececec;
+  }
+  
+  .verso .card-icons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .verso .card-icons a {
+    font-size:18px;
+    color:white;
+    background:black;
+    width:42px;
+    height:42px;
+    border-radius:100%;
+    margin:8px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition:opacity .2s;
+  }
+  
+  .verso .card-icons a:hover {
+    cursor:pointer;
+    opacity:0.7;
+  }
+  
+  .card:hover .recto {
+    opacity:0;
+  }
+
+  .card .card-content h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+
+  
