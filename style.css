@@ -34,14 +34,17 @@ body {
 .navbar a {
     color: rgb(0, 0, 0);
     font-size: 0.9rem;
-    text-decoration: none;
     margin-right: 1.2rem;
+    transition: .4s;
+    font-weight: 600;
     
 }
 
 
 .navbar a:hover {
     color: rgb(113, 128, 196);
+    font-size: 1rem;
+    text-decoration: underline;
 }
 
 /* Home Page */
@@ -109,15 +112,6 @@ body {
     padding: 2rem 0;
 }
 
-.section-corona button {
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5vh;
-    font-size: 1.2rem;
-    padding: 2vh 5vw;
-    margin-bottom: 2vh;
-}
 
 .section-map {
     font-weight: bolder;
@@ -129,18 +123,32 @@ body {
     color: red;
 }
 
-.blue-btn {
-    background-color: #1486c4;
+.btn {
     color: white;
     border: none;
-    border-radius: 5vh;
+    border-radius: 2rem;
     font-size: 1.2rem;
     padding: 1.5vh 5vw;
-    margin: 2vh 0 3vh 0;
+    margin: .6rem 0 1rem 0;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
+    
+}
+
+.blue-btn {
+    background-color: #1486c4;
+    transition: .4s;
 }
 
 .blue-btn:hover {
     background-color: rgb(166, 197, 255);
+}
+.red-btn {
+    background-color: #dc0323;
+    transition: .4s;
+}
+
+.red-btn:hover {
+    background-color: #a51027;
 }
 
 .section-map iframe {
@@ -374,6 +382,7 @@ a, a:hover {
 
   /*footer */
   footer {background-color: #dddddd;}
+
   .ocean {
       margin-top: 5rem;
     height: 5%;
@@ -381,7 +390,7 @@ a, a:hover {
     position: relative;
     bottom: 0;
     left: 0;
-    background: #d7d7d7;
+    
     z-index: -100;
   }
   
@@ -417,4 +426,59 @@ a, a:hover {
   .endWave{
     display:none;
   }
+
+  footer .footer-logo {
+      height: 10rem;
+      display: flex;
+      margin: 0 0 0 2rem;
+  }
+
+  footer .footer-h2 {
+    font-family: 'Armata', sans-serif;
+      color: #3c86ad;
+      text-align: start;
+      width: 65vw;
+      margin: 5rem 1rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+  }
+
+  .footer-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+
+  footer .red-btn {
+      font-size: .9rem;
+      font-weight: 500;
+      padding: .7rem 2rem;
+  }
+
+  footer .social-btn {display: flex;}
+
+  footer .social-btn .fa {
+    font-size: 1.6rem;
+    color: white;
+    margin: .5rem;
+    padding: .8rem;
+    border-radius: 1.6rem;
+    width: 1.6rem;
+  }
+
+  footer p {
+      font-family: 'Changa One', display;
+      font-weight: 500;
+      font-size: 1.5rem;
+  }
+
+  .copyright {
+      margin-top: 7rem;
+      font-size: .8rem;
+      font-weight: 100;
+      font-family: 'Armata', sans-serif;
+  }
+
   
