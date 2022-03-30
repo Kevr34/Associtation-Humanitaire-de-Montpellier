@@ -1,4 +1,4 @@
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css');
 
 body {
     max-width: 100%;
@@ -11,7 +11,7 @@ body {
     
 }
 
-/* Header */
+/* ----------------------- Header -----------------------*/
  
 .header {
     position: fixed;
@@ -47,7 +47,7 @@ body {
     text-decoration: underline;
 }
 
-/* Home Page */
+/* ------------------ Home Page ------------------*/
 
 .section-home {
     width: 100vw;
@@ -481,4 +481,48 @@ a, a:hover {
       font-family: 'Armata', sans-serif;
   }
 
-  
+
+
+  /*--------------- Help us page ---------------*/
+
+  .section-quote {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+  }
+
+  .section-quote h2 {
+      font-family: 'Changa One', display;
+      font-weight: 400;
+      font-size: 2rem;
+  }
+
+  .section-quote blockquote {
+      font-size: .9rem;
+      color: rgb(122, 122, 122);
+  }
+
+  .section-quote p {
+      font-weight: 200;
+      color: rgb(39, 39, 39);
+      font-style: italic;
+  }
+
+  .star-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5rem;
+  }
+
+  .testimonial-star-rating {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin:  0 2rem 0 0;
+  }
+
+ .fa-star {
+    padding: .2rem;
+    color: rgb(242, 176, 30);
+}
