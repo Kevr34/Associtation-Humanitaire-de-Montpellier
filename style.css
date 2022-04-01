@@ -11,8 +11,13 @@ body {
     
 }
 
+h2 {
+    font-family: 'Changa One', display;
+    font-weight: 400;
+    font-size: 2rem;
+}
 /* ----------------------- Header -----------------------*/
- 
+
 .header {
     position: fixed;
     top: 0;
@@ -131,6 +136,7 @@ body {
     padding: 1.5vh 5vw;
     margin: .6rem 0 1rem 0;
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
+    width: fit-content;
     
 }
 
@@ -380,7 +386,7 @@ a, a:hover {
   }
 
 
-  /*footer */
+  /*------------------ footer ------------------- */
   footer {background-color: #dddddd;}
 
   .ocean {
@@ -492,11 +498,6 @@ a, a:hover {
       background-color: rgb(255, 255, 255);
   }
 
-  .section-quote h2 {
-      font-family: 'Changa One', display;
-      font-weight: 400;
-      font-size: 2rem;
-  }
 
   .section-quote blockquote {
       font-size: .9rem;
@@ -525,4 +526,106 @@ a, a:hover {
  .fa-star {
     padding: .2rem;
     color: rgb(242, 176, 30);
+}
+
+.section-donate {margin: 4rem 0 5rem 0;}
+.section-donate .food {width: 23rem;}
+.section-donate p {
+    margin: 0 0 2.5rem 0;
+}
+
+.section-donate .btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------------------- Form --------------- */
+
+.section-form {
+    border: solid 10px red;
+    border-radius: 30px 0 30px 0;
+    background-image: url(./img/bg-image.jpg) ;
+    background-size: cover;
+    
+}
+
+.bg-opacity {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px 0 20px 0;
+}
+.fa-bullhorn {
+   color: rgb(122, 122, 122);
+}
+
+.section-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 1rem 0 1rem;
+    
+}
+
+.section-form input {
+    height: 2.5rem;
+    border: solid 1px rgb(161, 156, 156);
+    border-radius: 5px;
+    width: 21rem;
+    margin: 0 0 2rem 0;
+}
+
+.section-form label {
+    font-weight: 600;
+    margin: 0 0 .8rem 0;
+}
+
+.section-form .red-star {color: #dc0323;}
+
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.checkbox-wrapper input {
+    height: 1rem;
+    margin: 0 0 1rem 0;
+    width: 1rem;
+    
+}
+
+.checkbox-wrapper label {
+    font-size: .9rem;
+    font-weight: 100;
+    width: 20rem;
+}
+
+/* ----------- Help Us Section --------------*/
+
+.section-helpus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dddddd;
+}
+
+.section-helpus h1 {
+    font-family: 'changa one', display;
+    font-size: 3rem;
+}
+
+.section-helpus p {padding: 0 .2rem 0 .2rem;}
+
+.section-helpus .help-card {
+    width: 21rem;
+    background-color: #fff;
+    border-radius: 30px 0px 30px 0;
+    margin: 1rem 0;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.4);
+}
+
+.section-helpus .help-card img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px 0 0 0;
 }
