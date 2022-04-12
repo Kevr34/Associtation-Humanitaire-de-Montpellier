@@ -45,7 +45,6 @@ h2 {
     
 }
 
-
 .navbar a:hover {
     color: rgb(159, 160, 161);
     font-size: 1rem;
@@ -53,10 +52,6 @@ h2 {
 }
 
 /* ------------------ Home Page ------------------*/
-@media screen and (min-width: 900px) {
-
-}
-
 
 .section-home {
     width: 100vw;
@@ -111,9 +106,13 @@ h2 {
 .section-corona {
     background-color: black;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+}
+
+.corona-container {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
 }
 
 .section-corona h2 {
@@ -133,7 +132,7 @@ h2 {
 
 .section-corona iframe {
     padding: 2rem 0;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9 !important;
     width: 90% !important;
     height: auto !important;
 }
@@ -142,8 +141,14 @@ h2 {
 .section-map {
     font-weight: bolder;
     font-size: 1.2rem;
-
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 5rem;
 }
+
+.section-map .map {width: 50rem;}
 
 .section-map .when {
     color: red;
@@ -154,11 +159,10 @@ h2 {
     border: none;
     border-radius: 2rem;
     font-size: 1.2rem;
-    padding: 1.5vh 5vw;
-    margin: .6rem 0 1rem 0;
+    padding: 1rem;
+    margin: .6rem 0 .6rem 0;
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
     width: fit-content;
-    
 }
 
 .blue-btn {
@@ -179,7 +183,7 @@ h2 {
 }
 
 .section-map iframe {
-    width: 90vw;
+    width: 90%;
     height: 50vh;
     padding: 2rem 0;
 }
@@ -476,8 +480,9 @@ a, a:hover {
 
   .footer-btn {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
   }
   
 
@@ -497,6 +502,9 @@ a, a:hover {
     border-radius: 1.6rem;
     width: 1.6rem;
   }
+  
+  
+
 
   footer p {
       font-family: 'Changa One', display;
@@ -652,4 +660,44 @@ a, a:hover {
     width: 100%;
     overflow: hidden;
     border-radius: 30px 0 0 0;
+}
+
+
+/*-------------------- Responsive ------------------ */
+
+@media screen and (max-width: 900px) {
+    .corona-container {
+         flex-wrap: wrap;
+         justify-content: center;
+         padding-left: 1rem;
+      }
+  
+    .section-map .map {  width: 50vw;}  
+    footer .footer-btn .btn {margin: .6rem 2rem;}    
+
+    
+  }
+
+@media screen and (min-width: 900px) {
+    .footer-btn button {
+        margin: 0 1rem;
+        
+    }
+
+    .footer-container {
+        width: 100vw;
+        display: flex;
+      }
+      
+     .logo-container {
+         width: 40rem;
+      }
+  
+     
+  
+      .btn-container {
+          padding-top: 5rem;
+          width: 70rem;
+      }
+
 }
